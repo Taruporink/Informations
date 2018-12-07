@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<link rel="stylesheet" href="/Users/Kaito/Templates/css/github.css">
+</head>
+<body>
+<h1 id="discordの使い方-チムメン向け">Discordの使い方( チムメン向け )</h1>
+<h2 id="このページについて">このページについて</h2>
+<p>Discordサーバー「進撃の巨人」では，</p>
+<ul>
+<li>レート報告所</li>
+<li>財宝通知</li>
+<li>music-bot</li>
+</ul>
+<p>の特殊なチャンネルが用意されていて，使い方がちょっとややこしいのでチムメンに向けて使い方や注意点などをこのページにまとめておきます．</p>
+<h2 id="目次">目次</h2>
+<p>ちょっと長いので目次とページ内リンクを作っておくので読みたい場所に飛んで読んでください．</p>
+<ul>
+<li><a href="#chapter1">レート報告所の使い方</a>
+<ul>
+<li><a href="#chapter1-1">まず，グループに参加したら...</a></li>
+<li><a href="#chapter1-2">使えるコマンドの一覧</a></li>
+<li><a href="#chapter1-3">注意点</a></li>
+</ul></li>
+<li><a href="#chapter2">財宝通知</a>
+<ul>
+<li><a href="#chapter2-1">通知について</a></li>
+</ul></li>
+<li><a href="#chapter3">music-bot</a>
+<ul>
+<li><a href="#chapter3-1">Rythmとは</a></li>
+<li><a href="#chapter3-2">基本的な使い方①(Youtubeから)</a></li>
+<li><a href="#chapter3-3">基本的な使い方②(直接)</a></li>
+<li><a href="#chapter3-4">他のコマンド</a></li>
+</ul></li>
+</ul>
+<p><a id="chapter1"></a></p>
+<h2 id="レート報告所">レート報告所</h2>
+<p>レート報告所では，用意されたコマンドを利用して稼いだレートの計上と確認ができます．</p>
+<p><a id="chapter1-1"></a></p>
+<h3 id="まずグループに参加したら...">まず，グループに参加したら...</h3>
+<p>レート報告所チャンネルで，</p>
+<pre><code>add 0</code></pre>
+<p>と送信してください．</p>
+<p>ユーザー登録的なものだと思ってもらえれば！</p>
+<p><a id="chapter1-2"></a></p>
+<h3 id="使えるコマンドの一覧">使えるコマンドの一覧</h3>
+<p>以下のコマンドを，使用例のように送信することで使うことができます．</p>
+<p>[管]テーブルに印があるものは，管理者権限を持つユーザーだけが使うことができます．</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">管</th>
+<th style="text-align: left;">コマンド</th>
+<th style="text-align: left;">説明</th>
+<th style="text-align: left;">使用例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">help</td>
+<td style="text-align: left;">簡単な使い方のガイド</td>
+<td style="text-align: left;">help</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">add <レート></td>
+<td style="text-align: left;">レートを計上</td>
+<td style="text-align: left;">add 100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">add2 <span class="citation" data-cites="ペア">@ペア</span>(メンション) <レート></td>
+<td style="text-align: left;">ペアとセットでレートを計上</td>
+<td style="text-align: left;">add2 <span class="citation" data-cites="yamada">@yamada</span> -100</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">cancel</td>
+<td style="text-align: left;">１個前のadd(2)をキャンセル</td>
+<td style="text-align: left;">cancel</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">myrate</td>
+<td style="text-align: left;">自分の稼いだレートを表示</td>
+<td style="text-align: left;">myrate</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">history</td>
+<td style="text-align: left;">自分のレート変動履歴を表示</td>
+<td style="text-align: left;">history</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">team</td>
+<td style="text-align: left;">メンバーの稼いだレートを表示</td>
+<td style="text-align: left;">team</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: left;">graph</td>
+<td style="text-align: left;">teamのグラフ版</td>
+<td style="text-align: left;">graph</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">☆</td>
+<td style="text-align: left;">manager <span class="citation" data-cites="誰か">@誰か</span>(メンション)</td>
+<td style="text-align: left;">メンションした人を管理者に</td>
+<td style="text-align: left;">manager <span class="citation" data-cites="yamada">@yamada</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">☆</td>
+<td style="text-align: left;">del <span class="citation" data-cites="誰か">@誰か</span>(メンション)</td>
+<td style="text-align: left;">メンションした人を削除</td>
+<td style="text-align: left;">del <span class="citation" data-cites="yamada">@yamada</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">☆</td>
+<td style="text-align: left;">reset</td>
+<td style="text-align: left;">チームのレート情報を消去</td>
+<td style="text-align: left;">reset</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">☆</td>
+<td style="text-align: left;">restore</td>
+<td style="text-align: left;">レート情報の復元</td>
+<td style="text-align: left;">restore</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">☆</td>
+<td style="text-align: left;">download</td>
+<td style="text-align: left;">クラウドからデータを上書き</td>
+<td style="text-align: left;">download</td>
+</tr>
+</tbody>
+</table>
+<p><a id="chapter1-3"></a></p>
+<h3 id="注意点">注意点</h3>
+<ul>
+<li>addまたはadd2はまとめて報告してください．毎試合報告されると困ったことになります(ﾉД)ｼｸｼｸ</li>
+<li>cancelは不安定なので，ミスった分addし直すとかのがいいかも</li>
+<li>僕が作った不安定なシステムなので，バグったりすることがよくあります．なにかおかしな挙動を見つけたときは，僕に伝えてください．</li>
+<li>delが期待通りに機能してなません．修正予定です．</li>
+</ul>
+<p>また，色々不都合があるため大きく作り変えようと思って少しづつ開発を勧めてるので，使いにくいところとかは伝えてもらえると反映できるかもしれません．</p>
+<p><a id="chapter2"></a></p>
+<h2 id="財宝通知">財宝通知</h2>
+<p>財宝通知は，財宝が出たことをメンバーに通知で知らせたいときに使うチャンネルです．</p>
+<p>財宝通知チャンネルで，</p>
+<pre><code>財宝</code></pre>
+<p>とメッセージを送れば， <em>(受け手側が端末の設定で通知を切ってなければ)</em> 参加者全員に通知が行きます．</p>
+<p><a id="chapter2-1"></a></p>
+<h3 id="通知について">通知について</h3>
+<p>通知が来ない原因は，</p>
+<ol type="1">
+<li>ディスコの通知設定</li>
+<li>端末の通知設定</li>
+<li>おやすみモード</li>
+</ol>
+<p>の3種類が考えられます．</p>
+<h4 id="ディスコの通知設定">1. ディスコの通知設定</h4>
+<p>(画面上部の)財宝通知 =&gt; 通知設定と進み，通知設定を@メンションのみに設定すればOKです．</p>
+<h4 id="端末の通知設定">2. 端末の通知設定</h4>
+<p>2は，(本体の)設定 =&gt; 通知 =&gt; Discordと進んでオフられてないか確認してください．</p>
+<h4 id="おやすみモード">3. おやすみモード</h4>
+<p>3は，(本体の)設定 =&gt; おやすみモード =&gt; 通知:常に知らせない，になってるとおやすみモード中は通知が来ないので「ロック中は知らせない」にするなり，おやすみモードを切るなりしてください！</p>
+<p>同様に，通知が来て困る方は①の設定を「通知しない」に変えるようにしてください．時間で昼間は無理とかなら，おやすみモードを上手く使って各自対策をするようにお願いします！ちなみに，手動でオンオフ切り替えなくても毎日指定の時間に自動でおやすみモードにする機能がiPhoneにはついてたりします！</p>
+<p><a id="chapter3"></a></p>
+<h2 id="music-bot">music-bot</h2>
+<p>music-botは，RythmというBotを操作するためのチャンネルです．</p>
+<p>前述のディスコの通知設定を参考に，music-botの通知は切っておくことをオススメします．</p>
+<p><a id="chapter3-1"></a></p>
+<h3 id="rythmとは">Rythmとは</h3>
+<p><a href="https://rythmbot.co/">Rythm</a> とは，youtubeなどのリンクを渡すことで，ボイスチャンネルに音楽を流してくれるパブリックボットです．</p>
+<p>そして，Rythmに関する操作を行うチャンネルが <em>music-botチャンネル</em> です．</p>
+<p>ここに，決められたコマンドを入力することで音楽の再生なり，操作をすることができます．</p>
+<p><a id="chapter3-2"></a></p>
+<h3 id="基本的な使い方youtubeから">基本的な使い方①(Youtubeから)</h3>
+<ol type="1">
+<li>音楽を流したいボイスチャンネルに接続する</li>
+<li><p>music-botチャンネルにて，</p>
+<pre><code>!join</code></pre>
+<p>と送信する(これでRythmがボイスチャンネルに参加する)</p></li>
+<li><p>流したい音楽のURLをYoutubeとかから引っ張ってくる</p></li>
+<li><p>music-botチャンネルで，</p>
+<pre><code>!p &lt;音楽のURL&gt;</code></pre>
+<p>と送信する =&gt; これで再生される</p></li>
+<li><p>Rythmがうるさくなったら，</p>
+<pre><code>!stop</code></pre>
+<p>で停止されます． 再び再生したければ，</p>
+<pre><code>!p</code></pre>
+<p>を送ればまた再生してくれます👍</p></li>
+<li><p>用済みになったら蹴ってあげてください</p>
+<pre><code>!disconnect</code></pre>
+<p>で勝手に出ていきます．</p></li>
+</ol>
+<p><a id="chapter3-3"></a></p>
+<h3 id="基本的な使い方直接">基本的な使い方②(直接)</h3>
+<p>①では，手動でYoutubeから引っ張ってきましたが，Rythmの!searchコマンドでは，youtubeの検索結果を表示して，選んだ音楽を流して貰うこともできます．</p>
+<p>オクラホマミキサーを聞きたいときどう操作すればいいかという例で説明します．</p>
+<ol type="1">
+<li>ボイスチャンネルに接続し，!joinでRythmを追加</li>
+<li><p>検索をかける</p>
+<pre><code>!search オクラホマミキサー</code></pre>
+<p>すると，</p>
+<pre><code>1 オクラホマミキサー踊ってみた！
+2 オクラホマミキサー引いてみた！
+3 オクラホマミキサー(ピアノ伴奏)</code></pre>
+<p>みたいな感じでオクラホマミキサーの検索結果が表示されます．</p></li>
+<li><p>検索結果から選びます．選び方は，</p>
+<pre><code>3</code></pre>
+<p>と数字を送ればOKです．</p></li>
+<li><p>再生される！！！わーい！</p></li>
+</ol>
+<p><a id="chapter3-4"></a></p>
+<h3 id="他のコマンド">他のコマンド</h3>
+<p>一部だけ他に使えるコマンドも紹介しますが，詳しくは <a href="https://rythmbot.co/features">公式サイト</a> を参照してください．</p>
+<p>また，コマンドにはエイリアス(ニックネームみたいなもの)が複数用意されていて，例えば!playと!pは同じ動作をします．そんな感じで，以下の表のコマンド欄には複数のコマンドが載ってることもあるけど，同じ動作をしてくれます．</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">コマンド</th>
+<th style="text-align: left;">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">!skip, !next, !s</td>
+<td style="text-align: left;">次の曲へ</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!cl, !clear</td>
+<td style="text-align: left;">再生待ちの曲を削除</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!shuffle</td>
+<td style="text-align: left;">再生待ちの曲をシャッフル</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!loop, !repeat</td>
+<td style="text-align: left;">再生中の曲をリピート</td>
+</tr>
+</tbody>
+</table>
+<p>長くなりましたが，これで終わります．</p>
+<p>読んでわからないところがあれば遠慮なく聞いてください！</p>
+</body>
+</html>
