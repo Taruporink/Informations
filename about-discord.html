@@ -9,285 +9,312 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-  <style>
-      body {
-        font-family: Helvetica, arial, sans-serif;
-        font-size: 14px;
-        line-height: 1.6;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background-color: white;
-        padding: 30px; }
 
-      body > *:first-child {
-        margin-top: 0 !important; }
-      body > *:last-child {
-        margin-bottom: 0 !important; }
 
-      a {
-        color: #4183C4; }
-      a.absent {
-        color: #cc0000; }
-      a.anchor {
-        display: block;
-        padding-left: 30px;
-        margin-left: -30px;
-        cursor: pointer;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0; }
 
-      h1, h2, h3, h4, h5, h6 {
-        margin: 20px 0 10px;
-        padding: 0;
-        font-weight: bold;
-        -webkit-font-smoothing: antialiased;
-        cursor: text;
-        position: relative; }
 
-      h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
-        background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;
-        text-decoration: none; }
 
-      h1 tt, h1 code {
-        font-size: inherit; }
+<!-- [始]github.css をこの中にコピペ！ -->
 
-      h2 tt, h2 code {
-        font-size: inherit; }
+<style>
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
 
-      h3 tt, h3 code {
-        font-size: inherit; }
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
 
-      h4 tt, h4 code {
-        font-size: inherit; }
 
-      h5 tt, h5 code {
-        font-size: inherit; }
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
 
-      h6 tt, h6 code {
-        font-size: inherit; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 15px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
 
-      h1 {
-        font-size: 28px;
-        color: black; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url("../../images/modules/styleguide/para.png") no-repeat 10px center;
+  text-decoration: none; }
 
-      h2 {
-        font-size: 24px;
-        border-bottom: 1px solid #cccccc;
-        color: black; }
+h1 tt, h1 code {
+  font-size: inherit; }
 
-      h3 {
-        font-size: 18px; }
+h2 tt, h2 code {
+  font-size: inherit; }
 
-      h4 {
-        font-size: 16px; }
+h3 tt, h3 code {
+  font-size: inherit; }
 
-      h5 {
-        font-size: 14px; }
+h4 tt, h4 code {
+  font-size: inherit; }
 
-      h6 {
-        color: #777777;
-        font-size: 14px; }
+h5 tt, h5 code {
+  font-size: inherit; }
 
-      p, blockquote, ul, ol, dl, li, table, pre {
-        margin: 15px 0; }
+h6 tt, h6 code {
+  font-size: inherit; }
 
-      hr {
-        background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
-        border: 0 none;
-        color: #cccccc;
-        height: 4px;
-        padding: 0; }
+h1 {
+  font-size: 28px;
+  color: black;
+  padding-left: 8px;
+}
 
-      body > h2:first-child {
-        margin-top: 0;
-        padding-top: 0; }
-      body > h1:first-child {
-        margin-top: 0;
-        padding-top: 0; }
-        body > h1:first-child + h2 {
-          margin-top: 0;
-          padding-top: 0; }
-      body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
-        margin-top: 0;
-        padding-top: 0; }
+h2 {
+  font-size: 24px;
+  border-bottom: 3px solid black;
+  color: black;
+  text-shadow: 1px 1px 1px rgb(193, 193, 193);
+  padding-left: 8px;
+}
 
-      a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
-        margin-top: 0;
-        padding-top: 0; }
+h3 {
+  font-size: 20px;
+  border-left: 10px solid black;
+  padding-left: 8px;
+  color: black;
+  background: rgb(242, 242, 242);
+}
 
-      h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
-        margin-top: 0; }
+h4 {
+  font-size: 16px; }
 
-      li p.first {
-        display: inline-block; }
+h5 {
+  font-size: 14px; }
 
-      ul, ol {
-        padding-left: 30px; }
+h6 {
+  color: #777777;
+  font-size: 14px; }
 
-      ul :first-child, ol :first-child {
-        margin-top: 0; }
+p, blockquote, table, pre {
+  margin: 12px 0;
+}
 
-      ul :last-child, ol :last-child {
-        margin-bottom: 0; }
+ul, ol, dl, li {
+    margin: 5px 0;
+}
 
-      dl {
-        padding: 0; }
-        dl dt {
-          font-size: 14px;
-          font-weight: bold;
-          font-style: italic;
-          padding: 0;
-          margin: 15px 0 5px; }
-          dl dt:first-child {
-            padding: 0; }
-          dl dt > :first-child {
-            margin-top: 0; }
-          dl dt > :last-child {
-            margin-bottom: 0; }
-        dl dd {
-          margin: 0 0 15px;
-          padding: 0 15px; }
-          dl dd > :first-child {
-            margin-top: 0; }
-          dl dd > :last-child {
-            margin-bottom: 0; }
+hr {
+  background: transparent url("../../images/modules/pulls/dirty-shade.png") repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0; }
 
-      blockquote {
-        border-left: 4px solid #dddddd;
-        padding: 0 15px;
-        color: #777777; }
-        blockquote > :first-child {
-          margin-top: 0; }
-        blockquote > :last-child {
-          margin-bottom: 0; }
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
 
-      table {
-        padding: 0; }
-        table tr {
-          border-top: 1px solid #cccccc;
-          background-color: white;
-          margin: 0;
-          padding: 0; }
-          table tr:nth-child(2n) {
-            background-color: #f8f8f8; }
-          table tr th {
-            font-weight: bold;
-            border: 1px solid #cccccc;
-            text-align: left;
-            margin: 0;
-            padding: 6px 13px; }
-          table tr td {
-            border: 1px solid #cccccc;
-            text-align: left;
-            margin: 0;
-            padding: 6px 13px; }
-          table tr th :first-child, table tr td :first-child {
-            margin-top: 0; }
-          table tr th :last-child, table tr td :last-child {
-            margin-bottom: 0; }
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
 
-      img {
-        max-width: 100%; }
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
 
-      span.frame {
-        display: block;
-        overflow: hidden; }
-        span.frame > span {
-          border: 1px solid #dddddd;
-          display: block;
-          float: left;
-          overflow: hidden;
-          margin: 13px 0 0;
-          padding: 7px;
-          width: auto; }
-        span.frame span img {
-          display: block;
-          float: left; }
-        span.frame span span {
-          clear: both;
-          color: #333333;
-          display: block;
-          padding: 5px 0 0; }
-      span.align-center {
-        display: block;
-        overflow: hidden;
-        clear: both; }
-        span.align-center > span {
-          display: block;
-          overflow: hidden;
-          margin: 13px auto 0;
-          text-align: center; }
-        span.align-center span img {
-          margin: 0 auto;
-          text-align: center; }
-      span.align-right {
-        display: block;
-        overflow: hidden;
-        clear: both; }
-        span.align-right > span {
-          display: block;
-          overflow: hidden;
-          margin: 13px 0 0;
-          text-align: right; }
-        span.align-right span img {
-          margin: 0;
-          text-align: right; }
-      span.float-left {
-        display: block;
-        margin-right: 13px;
-        overflow: hidden;
-        float: left; }
-        span.float-left span {
-          margin: 13px 0 0; }
-      span.float-right {
-        display: block;
-        margin-left: 13px;
-        overflow: hidden;
-        float: right; }
-        span.float-right > span {
-          display: block;
-          overflow: hidden;
-          margin: 13px auto 0;
-          text-align: right; }
+li p.first {
+  display: inline-block; }
 
-      code, tt {
-        margin: 0 2px;
-        padding: 0 5px;
-        white-space: nowrap;
-        border: 1px solid #eaeaea;
-        background-color: #f8f8f8;
-        border-radius: 3px; }
+ul, ol {
+  padding-left: 30px; }
 
-      pre code {
-        margin: 0;
-        padding: 0;
-        white-space: pre;
-        border: none;
-        background: transparent; }
+ul :first-child, ol :first-child {
+  margin-top: 0; }
 
-      .highlight pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        font-size: 13px;
-        line-height: 19px;
-        overflow: auto;
-        padding: 6px 10px;
-        border-radius: 3px; }
+ul :last-child, ol :last-child {
+  margin-bottom: 0; }
 
-      pre {
-        background-color: #f8f8f8;
-        border: 1px solid #cccccc;
-        font-size: 13px;
-        line-height: 19px;
-        overflow: auto;
-        padding: 6px 10px;
-        border-radius: 3px; }
-        pre code, pre tt {
-          background-color: transparent;
-          border: none; }
-  </style>
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+</style>
+
+<!--  [終]github.css をこの中にコピペ！ -->
+
+
 </head>
 <body>
 <h1 id="discordの使い方-チムメン向け">Discordの使い方( チムメン向け )</h1>
@@ -300,13 +327,15 @@
 </ul>
 <p>の特殊なチャンネルが用意されていて，使い方がちょっとややこしいのでチムメンに向けて使い方や注意点などをこのページにまとめておきます．</p>
 <h2 id="目次">目次</h2>
-<p>ちょっと長いので目次とページ内リンクを作っておくので読みたい場所に飛んで読んでください．</p>
+<p>ちょっと長いので目次とページ内リンクを作っておきます.</p>
+<p>適所に飛んで読んでください．</p>
 <ul>
 <li><a href="#chapter1">レート報告所の使い方</a>
 <ul>
 <li><a href="#chapter1-1">まず，グループに参加したら...</a></li>
-<li><a href="#chapter1-2">使えるコマンドの一覧</a></li>
-<li><a href="#chapter1-3">注意点</a></li>
+<li><a href="#chapter1-2">基本的な使い方</a></li>
+<li><a href="#chapter1-3">使えるコマンドの一覧</a></li>
+<li><a href="#chapter1-4">注意点</a></li>
 </ul></li>
 <li><a href="#chapter2">財宝通知</a>
 <ul>
@@ -330,9 +359,22 @@
 <p>と送信してください．</p>
 <p>ユーザー登録的なものだと思ってもらえれば！</p>
 <p><a id="chapter1-2"></a></p>
+<h3 id="基本的な使い方">基本的な使い方</h3>
+<p>最低限の使い方としては, <strong>add</strong> や <strong>add2</strong> コマンドを使ってレートを報告していき, <strong>team</strong> や <strong>graph</strong> などのコマンドでレートの状況を確認するという流れです.</p>
+<p><strong>add</strong> は個人用, <strong>add2</strong> はペア込みでレート報告できるコマンドで, <strong>team</strong> や <strong>graph</strong> はチームレート確認用のコマンドです.</p>
+<p>他にもいくつかコマンドが用意されているので, 詳しくは次項の <a href="#chapter1-3">使えるコマンドの一覧</a> を参照してください.</p>
+<pre class="markup"><code>[ユーザー] add 100
+[ボット] レートを報告しました! 合計レート100!
+[ユーザー] add2 @Yamada#3555(メンション) -80
+[ボット] レートを報告しました!
+[ユーザー] team
+[ボット] チームレート: 1000, Aさん: 500, Bさん : 500</code></pre>
+<p>みたいなイメージです.</p>
+<p><a id="chapter1-3"></a></p>
 <h3 id="使えるコマンドの一覧">使えるコマンドの一覧</h3>
-<p>以下のコマンドを，使用例のように送信することで使うことができます．</p>
-<p>[管]テーブルに印があるものは，管理者権限を持つユーザーだけが使うことができます．</p>
+<p>前項で紹介した基本的なコマンド以外にも以下のコマンドを，使用例のように送信することで使うことができます．</p>
+<p>また, メンバーの消去やリセットなどのコマンドは管理者のみが行うことができるようになっています.</p>
+<p>管理者権限が必要なコマンドには, [管]テーブルに印がついています.</p>
 <table>
 <thead>
 <tr class="header">
@@ -364,7 +406,7 @@
 <tr class="even">
 <td style="text-align: center;"></td>
 <td style="text-align: left;">cancel</td>
-<td style="text-align: left;">１個前のadd(2)をキャンセル</td>
+<td style="text-align: left;">１個前のadd/add2をキャンセル</td>
 <td style="text-align: left;">cancel</td>
 </tr>
 <tr class="odd">
@@ -406,32 +448,33 @@
 <tr class="odd">
 <td style="text-align: center;">☆</td>
 <td style="text-align: left;">reset</td>
-<td style="text-align: left;">チームのレート情報を消去</td>
+<td style="text-align: left;">チームの情報を消去</td>
 <td style="text-align: left;">reset</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">☆</td>
-<td style="text-align: left;">restore</td>
-<td style="text-align: left;">レート情報の復元</td>
-<td style="text-align: left;">restore</td>
+<td style="text-align: left;">confirm</td>
+<td style="text-align: left;">manager/del/resetの確定</td>
+<td style="text-align: left;">confirm</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">☆</td>
-<td style="text-align: left;">download</td>
-<td style="text-align: left;">クラウドからデータを上書き</td>
-<td style="text-align: left;">download</td>
+<td style="text-align: left;">restore</td>
+<td style="text-align: left;">manager/del/resetの取り消し</td>
+<td style="text-align: left;">restore</td>
 </tr>
 </tbody>
 </table>
-<p><a id="chapter1-3"></a></p>
+<p><a id="chapter1-4"></a></p>
 <h3 id="注意点">注意点</h3>
 <ul>
-<li>addまたはadd2はまとめて報告してください．毎試合報告されると困ったことになります(ﾉД)ｼｸｼｸ</li>
-<li>cancelは不安定なので，ミスった分addし直すとかのがいいかも</li>
-<li>僕が作った不安定なシステムなので，バグったりすることがよくあります．なにかおかしな挙動を見つけたときは，僕に伝えてください．</li>
-<li>delが期待通りに機能してなません．修正予定です．</li>
+<li>add, add2, cancel, manager, del, reset, confirm, restoreはクラウドにデータを送信しているので返信にやや時間がかかります.</li>
+<li>1日のアクセス制限が100回までという制約があるので, 上述のクラウドとのやり取りがあるコマンドは100回/日までにしてください. 同時に, add/add2はまとめて報告することをおすすめします.</li>
+<li>cancelは自分限定ではなく, チーム全体で1個前の処理を取り消します.</li>
+<li>僕が作った不安定なシステムなので，バグったりすることがよくあります. Botが強制的に再起動したら処理が実行できてない可能性がありますので注意してください.</li>
+<li>利用しているサービスの仕様上, 約24時間に1回再起動が入りますがお気になさらず.</li>
+<li>teamコマンドでは, 個人が稼いだ総レートをもとに推定した層の情報も一応表示してますが正確であるとは限らないので参考までにどうぞ.</li>
 </ul>
-<p>また，色々不都合があるため大きく作り変えようと思って少しづつ開発を勧めてるので，使いにくいところとかは伝えてもらえると反映できるかもしれません．</p>
 <p><a id="chapter2"></a></p>
 <h2 id="財宝通知">財宝通知</h2>
 <p>財宝通知は，財宝が出たことをメンバーに通知で知らせたいときに使うチャンネルです．</p>
